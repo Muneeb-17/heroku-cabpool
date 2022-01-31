@@ -56,7 +56,9 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "node ./app.js"
+    "test": "echo\"Error no test specified\" && exit 1",
+    "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install  &&  npm run build "
   },
   "eslintConfig": {
     "extends": [
